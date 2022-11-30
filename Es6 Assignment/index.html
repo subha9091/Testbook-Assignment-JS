@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>document</title>
+      <script src="script.js"></script>
+</head>
+
+<body>
+      <script>
+            class Cars {
+                  constructor(name) {
+                        this.carname = name;
+                        console.log("I have a " + this.carname + "," + " it is a Mustang");
+                  }
+                  info() {
+                        document.write("I have a " + this.carname + "," + " it is a Mustang");
+                  }
+            }
+            class Car extends Cars {
+                  info() {
+                        super.info();
+                        console.log("I have a " + this.carname + "," + " it is a Mustang");
+                  }
+            }
+            let a = new Car("Ford");
+            a.info();
+      </script>
+</body>
+
+</html>
